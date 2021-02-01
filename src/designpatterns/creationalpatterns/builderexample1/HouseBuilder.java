@@ -1,14 +1,14 @@
 package designpatterns.creationalpatterns.builderexample1;
 
-interface HouseBuilder { 
+interface HouseBuilder {
   
-    public void buildBasement(); 
+    public void buildBasement();
   
-    public void buildStructure(); 
+    public void buildStructure();
   
-    public void bulidRoof(); 
+    public void bulidRoof();
   
-    public void buildInterior(); 
+    public void buildInterior();
   
-    public House getHouse(); 
+    public House getHouse();
 } 

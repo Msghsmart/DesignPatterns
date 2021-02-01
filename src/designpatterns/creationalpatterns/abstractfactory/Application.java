@@ -9,9 +9,21 @@ package designpatterns.creationalpatterns.abstractfactory;
  */
 public class Application {
 
-	private static void initialize() {
-		
-	}
+	
+	
+	private GUIFactory guiFactory;
+    private Button button;
+    public Application(GUIFactory guiFactory) {
+        this.guiFactory = guiFactory;
+    }
+    
+    void createUI() {
+    	this.button = guiFactory.createButton();
+    }
+    
+    void paint() {
+        button.paint();
+    }
 
 	public static void main(String[] args) {
 
